@@ -1,3 +1,6 @@
+/*Variáveis e Tipos de Dados*/
+
+
 let nome = "Dayanne";
 console.log(nome);
 
@@ -14,11 +17,84 @@ if (estudando) {
   console.log("Não estou estudando no momento.");
 }
 
+
+/*Operadores*/
     console.log("A soma de 5 + 3 ->");
     console.log(5 + 3);
 
     console.log("O resto da divisao de 3/3 ->");
     console.log(3/3);
+
+    let userAge = prompt ("Quantos anos você tem?");
+    userAge = Number (userAge);
+    if (userAge >=18){
+      console.log("Você é maior de idade!");
+    } else {
+       console.log ("Você é menor de idade!");
+    }
+
+
+    /*Condições*/ 
+     userAge =  Number(prompt("Digite um números"));
+
+    if (userAge %2 == 0){
+      console.log("O número é par.");
+    } 
+    else {
+       console.log ("O número é ímpar.");
+    }
+
+    let idadeUsuario = Number(prompt("Digite sua idade:"));
+    if (idadeUsuario >= 18) {
+      console.log ("Você pode dirigir.");
+    } else {
+     console.log ("Você não pode dirigir.");
+   
+    }
+     let nota = Number(prompt("Digite sua nota (0 a 10):"));
+     if (nota < 5) {
+      console.log("Reprovado!");
+     } else if (nota >= 5 && nota < 7) {
+      console.log("Recuperação!");
+     }
+     else if (nota >= 7 && nota <= 10) {
+      console.log("Aprovado!");
+     }
+      
+
+
+     /*Laços de Repetição*/
+       for (let x = 1; x <= 10; x++) {
+        console.log(x);
+       }
+
+        let numeroM = parseInt(prompt("Digite um número para ver a tabuada:"));
+       for (let i = 1; i <= 10; i++) {
+       console.log(numeroM + " x " + i + " = " + (numeroM * i));
+       }
+           
+       let senha  = prompt("Digite a senha:");
+        while (senha !== "1234") {
+       alert("Senha incorreta! Tente novamente.");
+       senha = prompt("Digite a senha:");
+        }
+        alert("Acesso permitido!");
+      
+        /*Funções */
+        function soma(num1, num2) {  // sem ;
+    return num1 + num2;
+}
+let resultado = soma(8, 5);
+console.log("A soma é: " + resultado);
+
+
+
+
+     
+
+
+  
+
 
     
     
