@@ -80,12 +80,65 @@ if (estudando) {
         }
         alert("Acesso permitido!");
       
+
+
         /*Funções */
         function soma(num1, num2) {  // sem ;
-    return num1 + num2;
-}
-let resultado = soma(8, 5);
-console.log("A soma é: " + resultado);
+        return num1 + num2;
+             }
+        let resultado = soma(8, 5);
+       console.log("A soma é: " + resultado);
+
+
+
+        function saudacao(nome) { 
+         return "Olá, " + nome + "! ";
+           }
+        console.log(saudacao("Dayanne"));
+
+        function calculoMedia (num1, num2, num3) {
+         return (num1 + num2 + num3) / 3;
+         }
+        console.log(calculoMedia(7, 8, 9));
+
+
+        /*Arrays */
+        let nomes = ["Dayanne", "Kalen", "Lelezinha", "Amandinha", "Natalia"];
+        console.log("Primeiro nome:", nomes[0]);
+        console.log("Último nome:", nomes[nomes.length - 1]);
+       
+        nomes.push("Fernanda");
+        console.log("lista de nomes atualizada:", nome);
+        for (let j = 0; j < nomes.length; j++) {
+        console.log(`nome ${j + 1}: ${nomes[j]}`);
+        }
+
+        /* Objetos */
+       let carro = {
+       marca: "Toyota",
+       modelo: "Corolla",
+       ano: 2022
+       };
+
+       console.log(carro);
+       console.log(`O carro é um ${carro.marca} ${carro.modelo}, ano ${carro.ano}.`);
+
+      let aluno = {
+      nome: "Dayanne",
+      idade: 18,
+     notas: [8, 9, 7]
+     };
+
+    let media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2]) / 3;
+
+    console.log("Nome:", aluno.nome);
+     console.log("Média:", media);
+
+     let bodySplash = {
+      produto: "beijinho",
+      preco: 80,
+     }
+
 
 
 
