@@ -129,15 +129,44 @@ if (estudando) {
      notas: [8, 9, 7]
      };
 
-    let media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2]) / 3;
+     let media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2]) / 3;
 
-    console.log("Nome:", aluno.nome);
+     console.log("Nome:", aluno.nome);
      console.log("Média:", media);
+       
 
-     let bodySplash = {
-      produto: "beijinho",
-      preco: 80,
+
+     let produtos = [
+      { nome: "Victoria's Secret Bare Vanilla", preco: 131 },
+      { nome: "Rush Victorias Secret", preco: 185 },
+      { nome: "Victorias Secret Coconut Passion Shimmera", preco: 161 },
+      ];
+
+
+
+      for (let i = 0; i < produtos.length; i++) {
+      console.log("Nome:", produtos[i].nome);
+      console.log("Preço R$:", produtos[i].preco);
+      console.log("----------------------");
      }
+  
+
+     /*Eventos DOM */
+     let botao = document.getElementById("botaoCor");
+
+botao.addEventListener("click", function() {
+  if (document.body.classList.contains("black")) {
+    document.body.classList.remove("black");
+    document.body.classList.add("rosa");
+  } else {
+    document.body.classList.remove("rosa");
+    document.body.classList.add("black");
+  }
+});
+
+
+
+
 
 
 
