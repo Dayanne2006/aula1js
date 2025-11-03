@@ -215,9 +215,3 @@ botao.addEventListener("click", function () {
   document.body.style.backgroundColor = corAleatoria;
 });
 
-let cliques = 0
-let show = document.getElementById("resultado")
-function funcao() {
-  cliques++
-  show.innerText = (`Cliques: ${cliques}`)
-}

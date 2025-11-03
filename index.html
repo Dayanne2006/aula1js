@@ -15,6 +15,15 @@
   <button id="contador" onclick="funcao()">Clique aqui</button>
   <p id="resultado">Cliques: 0</p>
 
+  <script>
+    let cliques = 0
+    let show = document.getElementById("resultado")
+    function funcao() {
+      cliques++
+      show.innerText = (`Cliques: ${cliques}`)
+    }
+  </script>
+
   <script src="assets/js/script.js"></script>
 </body>
 
