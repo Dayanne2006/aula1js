@@ -19,142 +19,142 @@ if (estudando) {
 
 
 /*Operadores*/
-    console.log("A soma de 5 + 3 ->");
-    console.log(5 + 3);
+console.log("A soma de 5 + 3 ->");
+console.log(5 + 3);
 
-    console.log("O resto da divisao de 3/3 ->");
-    console.log(3/3);
+console.log("O resto da divisao de 3/3 ->");
+console.log(3 / 3);
 
-    let userAge = prompt ("Quantos anos você tem?");
-    userAge = Number (userAge);
-    if (userAge >=18){
-      console.log("Você é maior de idade!");
-    } else {
-       console.log ("Você é menor de idade!");
-    }
-
-
-    /*Condições*/ 
-     userAge =  Number(prompt("Digite um números"));
-
-    if (userAge %2 == 0){
-      console.log("O número é par.");
-    } 
-    else {
-       console.log ("O número é ímpar.");
-    }
-
-    let idadeUsuario = Number(prompt("Digite sua idade:"));
-    if (idadeUsuario >= 18) {
-      console.log ("Você pode dirigir.");
-    } else {
-     console.log ("Você não pode dirigir.");
-   
-    }
-     let nota = Number(prompt("Digite sua nota (0 a 10):"));
-     if (nota < 5) {
-      console.log("Reprovado!");
-     } else if (nota >= 5 && nota < 7) {
-      console.log("Recuperação!");
-     }
-     else if (nota >= 7 && nota <= 10) {
-      console.log("Aprovado!");
-     }
-      
+let userAge = prompt("Quantos anos você tem?");
+userAge = Number(userAge);
+if (userAge >= 18) {
+  console.log("Você é maior de idade!");
+} else {
+  console.log("Você é menor de idade!");
+}
 
 
-     /*Laços de Repetição*/
-       for (let x = 1; x <= 10; x++) {
-        console.log(x);
-       }
+/*Condições*/
+userAge = Number(prompt("Digite um números"));
 
-        let numeroM = parseInt(prompt("Digite um número para ver a tabuada:"));
-       for (let i = 1; i <= 10; i++) {
-       console.log(numeroM + " x " + i + " = " + (numeroM * i));
-       }
-           
-       let senha  = prompt("Digite a senha:");
-        while (senha !== "1234") {
-       alert("Senha incorreta! Tente novamente.");
-       senha = prompt("Digite a senha:");
-        }
-        alert("Acesso permitido!");
-      
+if (userAge % 2 == 0) {
+  console.log("O número é par.");
+}
+else {
+  console.log("O número é ímpar.");
+}
 
+let idadeUsuario = Number(prompt("Digite sua idade:"));
+if (idadeUsuario >= 18) {
+  console.log("Você pode dirigir.");
+} else {
+  console.log("Você não pode dirigir.");
 
-        /*Funções */
-        function soma(num1, num2) {  // sem ;
-        return num1 + num2;
-             }
-        let resultado = soma(8, 5);
-       console.log("A soma é: " + resultado);
+}
+let nota = Number(prompt("Digite sua nota (0 a 10):"));
+if (nota < 5) {
+  console.log("Reprovado!");
+} else if (nota >= 5 && nota < 7) {
+  console.log("Recuperação!");
+}
+else if (nota >= 7 && nota <= 10) {
+  console.log("Aprovado!");
+}
 
 
 
-        function saudacao(nome) { 
-         return "Olá, " + nome + "! ";
-           }
-        console.log(saudacao("Dayanne"));
+/*Laços de Repetição*/
+for (let x = 1; x <= 10; x++) {
+  console.log(x);
+}
 
-        function calculoMedia (num1, num2, num3) {
-         return (num1 + num2 + num3) / 3;
-         }
-        console.log(calculoMedia(7, 8, 9));
+let numeroM = parseInt(prompt("Digite um número para ver a tabuada:"));
+for (let i = 1; i <= 10; i++) {
+  console.log(numeroM + " x " + i + " = " + (numeroM * i));
+}
 
-
-        /*Arrays */
-        let nomes = ["Dayanne", "Kalen", "Lelezinha", "Amandinha", "Natalia"];
-        console.log("Primeiro nome:", nomes[0]);
-        console.log("Último nome:", nomes[nomes.length - 1]);
-       
-        nomes.push("Fernanda");
-        console.log("lista de nomes atualizada:", nome);
-        for (let j = 0; j < nomes.length; j++) {
-        console.log(`nome ${j + 1}: ${nomes[j]}`);
-        }
-
-        /* Objetos */
-       let carro = {
-       marca: "Toyota",
-       modelo: "Corolla",
-       ano: 2022
-       };
-
-       console.log(carro);
-       console.log(`O carro é um ${carro.marca} ${carro.modelo}, ano ${carro.ano}.`);
-
-      let aluno = {
-      nome: "Dayanne",
-      idade: 18,
-     notas: [8, 9, 7]
-     };
-
-     let media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2]) / 3;
-
-     console.log("Nome:", aluno.nome);
-     console.log("Média:", media);
-       
-
-
-     let produtos = [
-      { nome: "Victoria's Secret Bare Vanilla", preco: 131 },
-      { nome: "Rush Victorias Secret", preco: 185 },
-      { nome: "Victorias Secret Coconut Passion Shimmera", preco: 161 },
-      ];
+let senha = prompt("Digite a senha:");
+while (senha !== "1234") {
+  alert("Senha incorreta! Tente novamente.");
+  senha = prompt("Digite a senha:");
+}
+alert("Acesso permitido!");
 
 
 
-      for (let i = 0; i < produtos.length; i++) {
-      console.log("Nome:", produtos[i].nome);
-      console.log("Preço R$:", produtos[i].preco);
-      console.log("----------------------");
-     }
-  
+/*Funções */
+function soma(num1, num2) {  // sem ;
+  return num1 + num2;
+}
+let resultado = soma(8, 5);
+console.log("A soma é: " + resultado);
 
-     /*Eventos DOM */
-     let botao = document.getElementById("botaoCor");
 
-botao.addEventListener("click", function() {
+
+function saudacao(nome) {
+  return "Olá, " + nome + "! ";
+}
+console.log(saudacao("Dayanne"));
+
+function calculoMedia(num1, num2, num3) {
+  return (num1 + num2 + num3) / 3;
+}
+console.log(calculoMedia(7, 8, 9));
+
+
+/*Arrays */
+let nomes = ["Dayanne", "Kalen", "Lelezinha", "Amandinha", "Natalia"];
+console.log("Primeiro nome:", nomes[0]);
+console.log("Último nome:", nomes[nomes.length - 1]);
+
+nomes.push("Fernanda");
+console.log("lista de nomes atualizada:", nome);
+for (let j = 0; j < nomes.length; j++) {
+  console.log(`nome ${j + 1}: ${nomes[j]}`);
+}
+
+/* Objetos */
+let carro = {
+  marca: "Toyota",
+  modelo: "Corolla",
+  ano: 2022
+};
+
+console.log(carro);
+console.log(`O carro é um ${carro.marca} ${carro.modelo}, ano ${carro.ano}.`);
+
+let aluno = {
+  nome: "Dayanne",
+  idade: 18,
+  notas: [8, 9, 7]
+};
+
+let media = (aluno.notas[0] + aluno.notas[1] + aluno.notas[2]) / 3;
+
+console.log("Nome:", aluno.nome);
+console.log("Média:", media);
+
+
+
+let produtos = [
+  { nome: "Victoria's Secret Bare Vanilla", preco: 131 },
+  { nome: "Rush Victorias Secret", preco: 185 },
+  { nome: "Victorias Secret Coconut Passion Shimmera", preco: 161 },
+];
+
+
+
+for (let i = 0; i < produtos.length; i++) {
+  console.log("Nome:", produtos[i].nome);
+  console.log("Preço R$:", produtos[i].preco);
+  console.log("----------------------");
+}
+
+
+/*Eventos DOM */
+let botao = document.getElementById("botaoCor");
+
+botao.addEventListener("click", function () {
   if (document.body.classList.contains("black")) {
     document.body.classList.remove("black");
     document.body.classList.add("rosa");
@@ -165,19 +165,59 @@ botao.addEventListener("click", function() {
 });
 
 
+// PARTE 9: Manipulação de Strings
+nome = prompt("Digite seu nome:");
+console.log(`Seu nome tem ${nome.length} letras.`);
+
+let frase = prompt("Digite uma frase:");
+console.log(frase.toUpperCase());
+
+let texto = prompt("Digite um texto:");
+console.log(texto.substring(0, 5));
 
 
+// PARTE 10: Promises e Fetch API
+const minhaPromise = new Promise((resolve) => {
+  setTimeout(() => {
+    resolve("Concluído!");
+  }, 3000);
+});
 
+minhaPromise.then((mensagem) => {
+  console.log(mensagem);
+});
 
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((resposta) => resposta.json())
+  .then((dados) => {
+    console.log("Dados recebidos:", dados);
+  })
+  .catch((erro) => {
+    console.error("Erro ao buscar dados:", erro);
+  });
 
+fetch("https://jsonplaceholder.typicode.com/posts")
+  .then((resposta) => resposta.json())
+  .then((posts) => {
+    console.log("Títulos dos posts:");
+    posts.forEach((post) => {
+      console.log(post.title);
+    });
+  })
+  .catch((erro) => {
+    console.error("Erro ao buscar posts:", erro);
+  });
 
+const botao = document.getElementById("botaoCor");
 
-     
+botao.addEventListener("click", function () {
+  const corAleatoria = "#" + Math.floor(Math.random() * 16777215).toString(16);
+  document.body.style.backgroundColor = corAleatoria;
+});
 
-
-  
-
-
-    
-    
-
+let cliques = 0
+let show = document.getElementById("resultado")
+function funcao() {
+  cliques++
+  show.innerText = (`Cliques: ${cliques}`)
+}
